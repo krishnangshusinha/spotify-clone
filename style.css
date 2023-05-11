@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;1,400&display=swap');
+/* here the font is being imported from google font */
+body{
+    background-color: rgb(40, 39, 39);
+    background-image: url('pexels-elīna-arāja-3377405.jpg');
+}
+
+*{
+    margin : 0;
+    padding : 0;
+}
+
+nav{
+    font-family: 'Titillium Web', sans-serif;    /* the font family is used in the nav bar */
+}
+nav ul{     /* editing the <ul> part under <nav> part */
+    display: flex;   /* writting this makes the elements under <ul> horizontanlly */
+    align-items: center;  /* aligns the ul items centre vertically */
+    list-style-type: none;  /* this removes the bullets in the unordered list */
+    height : 70px;    /* height of the nav bar is made 70px */
+    background-color : black ;  /* background color of the nav bar is made black */
+    color : white;   /* color of font is made white */ 
+    border-radius: 5px;
+ 
+}
+
+nav ul li{   /* editing the <li> part under <ul> of the nav part */
+    padding : 0 15px;    /* padding from top(of its curent alignment)= 0 and from left = 12px  */
+    cursor : pointer;
+}
+div {
+    font-family: 'Titillium Web', sans-serif;    /* the font family used in the nav bar */
+
+    color:rgb(255, 255, 255);   /* font color for div */
+}
+.brand img{  /* editing the img under the brand class */
+    width : 70px;   /* width of the img */
+}
+
+.brand{
+    display: flex;     /* creating a flex box of the "Spotify Clone" phrase in the brand class */
+    align-items: flex-end;  /* aligning the "Spotify Clone" to the base of the container */
+    font-weight: bolder;   /* the font weight is made bold for "Spotify Clone */
+    font-size: 1.2rem;    /* font size is made bigger for "Spotify Clone" */
+    border-radius: 12px;
+}
+
+.container{   /* editing the container class */
+    font-family: 'Titillium Web', sans-serif;    /* the font family used in the nav bar */
+    background-color: rgb(61, 61, 61);  /* background color for the conatiner class is set */
+    min-height: 75vh;    /* i.e min height of the element 75% of total height */
+    color:rgba(255, 255, 255, 0.794);
+    display: flex;  /* container made a flex box */
+    margin: 10px auto; /* auto margin causes the container class div to be aligned centre wise */
+    padding-left: 10px;
+    width : 70vw;     /* width of container div is 70% of total */
+    border-radius: 15px;  /* a border radius is basically radii of the curve at border corners */
+    background-image: url('BG.jpg');  /* a background image is being added to the container*/
+
+}
+
+.Bottom{    /* bottom class is edited */
+    position: sticky;   /* so even if the screen is scrolled that division sticks to its position */ 
+    height: 130px;     /* height of the division */
+    background-color: black;
+    bottom: 0;
+    display: flex;  /* creating a flex box of the contents of the class bottom */
+    justify-content: center; /* aligns the items centre wise vertically */
+    align-items: center;   /* aligns the items centre wise vertically */
+    flex-direction: column-reverse;  /* brings the play,backward and forward button above the progess bar */
+    border-radius: 50px;
+    background-image: url('base1.jpg');
+}
+.Icons{  /* editing the icons */
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.Icons i{
+    padding: 0 20px;
+}
+#myProgressBar{
+    width: 35vw;   /* width would be 100% of the total width */
+    cursor: pointer;
+}
+
+.songItem{
+   height: 50px;   /* giving height to the elements */
+   display: flex;  /* creating a flex box for the songItem */
+   width: 20vw;    /* width is set 20% of total width */
+   color:rgb(255, 255, 255);  /* color of the font is white */
+   margin: 10px 0;
+   background-color:rgb(74, 74, 74) ;
+   border-radius: 50px;
+   justify-content: space-between;
+   align-items: center;
+}
+.songItem img{
+    width: 40px;
+    margin: 10px 10px;
+    border-radius: 60px;
+}
+.timestamp i{
+    margin: 0 10px;
+}
+.songItem i{
+    margin-right: 10px;
+}
+.timestamp i{
+    cursor : pointer;   /*makes the cursor hand like in front of the play button in song list*/
+}
+.songinfo{
+    position: absolute;
+    left: 25.5vw;
+    bottom: 0;
+    font-weight: bolder;
+    font-size: larger;
+}
+.songinfo img{
+    width: 1px;
+}
+.songinfo img{
+    width: 100px;
+    opacity: 0;    /* opacity made 0 so that the gif comes when the song is played and that would be made 1 in order to display it*/
+    transition: opacity 0.3s ease-in;  /* so when opacity is made 1 a transition of coming in with 1sec time takes place*/
+}

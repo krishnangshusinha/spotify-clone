@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Spotify - Clone</title>   <!--name of the site // -->
+
+    <link rel = "stylesheet" href = "style.css">  <!--links the style.css //-->
+</head>
+<body>
+    <nav>    <!--navigation bar //-->
+        <ul>  <!-- unordered list //-->
+            <li class = "brand"><img src = "LOGO (3).png" alt = "Spotify Clone"> Spotify Clone </li>  <!--imports the image of the logo and a name "Spotify clone displaying under the logo (not the alt one , the one outside angular bracket) //-->
+            <li>HOME</li>   <!-- these are the list elements under the unordered list //-->
+            <li>ABOUT</li>
+        </ul>
+    </nav>
+
+    <div class = "container">  <!-- creating a class container (div basically defines a division or a section //--> 
+        <div class = "Song List">   <!-- Creating two div under the div class container //-->
+        <h1>Badass Songs</h1>
+        <div>                       <!-- creating another div//-->
+            <div class="songItem">  <!-- creating another class div songitem //-->
+
+                <img src="cover1.jpg" alt="1">  <!-- a songs cover image is added //-->
+                <span class = "songsname">The risk</span>  <!--  name of the song //-->
+                <span class = "songlistplay"><span class = "timestamp">1:12<i id = "0" class="fa-regular songitemplay fa-circle-play"></i></span></span>  <!-- span is similar to div but only difference is div is a block type division while span is a inline type of divsion, and the play icon is also inserted afterwards //-->
+
+            </div>
+            <div class="songItem">  <!-- creating another class div songitem //-->
+
+                <img src="cover2.jfif" alt="1">  <!-- a songs cover image is added //-->
+                <span class = "songsname">Unholy</span>  <!--  name of the song //-->
+                <span class = "songlistplay"><span class = "timestamp">2:37<i id = "1" class="fa-regular songitemplay fa-circle-play"></i></span></span>  <!-- span is similar to div but only difference is div is a block type division while span is a inline type of divsion, and the play icon is also inserted afterwards //-->
+
+            </div>
+            <div class="songItem">  <!-- creating another class div songitem //-->
+
+                <img src="cover3.png" alt="1">  <!-- a songs cover image is added //-->
+                <span class = "songsname">No Guidance</span>  <!--  name of the song //-->
+                <span class = "songlistplay"><span class = "timestamp">4:24<i id = "2" class="fa-regular songitemplay fa-circle-play"></i></span></span>  <!-- span is similar to div but only difference is div is a block type division while span is a inline type of divsion, and the play icon is also inserted afterwards //-->
+
+            </div>
+            <div class="songItem">  <!-- creating another class div songitem //-->
+
+                <img src="cover4.jpg" alt="1">  <!-- a songs cover image is added //-->
+                <span class = "songsname">Slow Motion</span>  <!--  name of the song //-->
+                <span class = "songlistplay"><span class = "timestamp">2:25<i id = "3" class="fa-regular songitemplay fa-circle-play"></i></span></span>  <!-- span is similar to div but only difference is div is a block type division while span is a inline type of divsion, and the play icon is also inserted afterwards //-->
+
+            </div>
+            <div class="songItem">  <!-- creating another class div songitem //-->
+
+                <img src="cover5.jpg" alt="1">  <!-- a songs cover image is added //-->
+                <span class = "songsname">Gang Gang</span>  <!--  name of the song //-->
+                <span class = "songlistplay"><span class = "timestamp">2:42<i id = "4" class="fa-regular songitemplay fa-circle-play"></i></span></span>  <!-- span is similar to div but only difference is div is a block type division while span is a inline type of divsion, and the play icon is also inserted afterwards //-->
+
+            </div>
+            <div class="songItem">  <!-- creating another class div songitem //-->
+
+                <img src="cover6.webp" alt="1">  <!-- a songs cover image is added //-->
+                <span class = "songsname">Bad Boy</span>  <!--  name of the song //-->
+                <span class = "songlistplay"><span class = "timestamp">3:07<i id = "5" class="fa-regular songitemplay fa-circle-play"></i></span></span>  <!-- span is similar to div but only difference is div is a block type division while span is a inline type of divsion, and the play icon is also inserted afterwards //-->
+
+            </div>
+            <div class="songItem">  <!-- creating another class div songitem //-->
+
+                <img src="cover7.jfif" alt="1">  <!-- a songs cover image is added //-->
+                <span class = "songsname">Under The Influence</span>  <!--  name of the song //-->
+                <span class = "songlistplay"><span class = "timestamp">3:04<i id = "6" class="fa-regular songitemplay fa-circle-play"></i></span></span>  <!-- span is similar to div but only difference is div is a block type division while span is a inline type of divsion, and the play icon is also inserted afterwards //-->
+
+            </div>
+            <div class="songItem">  <!-- creating another class div songitem //-->
+
+                <img src="cover8.jpg" alt="1">  <!-- a songs cover image is added //-->
+                <span class = "songsname">Love Me Back</span>  <!--  name of the song //-->
+                <span class = "songlistplay"><span class = "timestamp">3:14<i id = "7" class="fa-regular songitemplay fa-circle-play"></i></span></span>  <!-- span is similar to div but only difference is div is a block type division while span is a inline type of divsion, and the play icon is also inserted afterwards //-->
+
+            </div>
+        </div>
+        </div>
+        <div class = "Song Banner"></div>
+    </div>
+
+    <div class = "Bottom">    <!-- creating div class bottom //-->
+        <input type = "range" name = "range" id = "myProgressBar" min="0" value = "0" max="100">   <!-- this basically creates the progress bar for the music //-->
+
+        <div class = "Icons">   <!-- div class icons is being created under the div class bottom //-->
+            
+            <!-- here the fontawesome icons(it is a site that gives free icons) is being used //-->
+            <i class="fa-solid fa-2x fa-backward" id = "previous"></i>       <!-- the fontawesome backward icon code is copied here to import it (in between the link a phrase "fa-3x" is added inorder to increase the size of the icon by 3 times)//-->
+            <i class="fa-regular fa-3x fa-circle-play" id = "masterplay" ></i>  <!-- the fontawesome play icon code is copied here to import it (in between the link a phrase "fa-3x" is added inorder to increase the size of the icon by 3 times)//-->
+            <i class="fa-solid fa-2x fa-forward" id = "next"></i>      <!-- the fontawesome forward icon code is copied here to import it (in between the link a phrase "fa-3x" is added inorder to increase the size of the icon by 3 times)//-->
+
+        </div>
+
+        <div class = "songinfo">
+            <img src="music-player-gif-10.gif" alt="" id = 'gif'><span id="mastersong">The Risk</span>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/0bed358967.js" crossorigin="anonymous"></script>    <!-- the fontawesome site is being imported thye kit code is being copied from there//-->
+    <script src = 'script.js'></script>     <!-- it links the script.js with html //-->
+</body>
+</html>
